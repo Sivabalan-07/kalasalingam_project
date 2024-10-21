@@ -1,0 +1,446 @@
+.bgcolor {
+    background-color: red;
+    display: none;
+}
+
+
+/* SMALL DEVICES (LANDSCAPE PHONES UPTO 516PX AND BELOW) */
+@media(width<=576px) {
+
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .grid-5,
+    .grid-6 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .align {
+        /* max-width: 576px;     */
+        margin: 0;
+        padding: 0;
+    }
+
+    .bgcolor {
+        display: block;
+    }
+
+    .componentSpacing {
+        padding: 1rem;
+    }
+
+    .topBody,
+    .bottomnavLinks {
+        display: none;
+    }
+
+    .logoContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logoContainer img {
+        margin: 0;
+    }
+
+    .bottomBody {
+        position: relative;
+    }
+
+    .checkButton {
+        display: flex;
+        font-size: 3rem;
+        position: absolute;
+        left: 2rem;
+        align-self: center;
+    }
+
+    .bottomnavLinks {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+
+    }
+
+    .bottomnavLinks li {
+        padding: 1.5rem 2rem;
+        border-bottom: solid 1px #dbd8d8;
+        margin: 0;
+        width: 100%;
+    }
+
+    .bottomnavLinks li a {
+        color: #7e7979;
+        font-size: 1.4rem;
+    }
+
+    .checkCross {
+        font-size: 3rem;
+        display: flex;
+        position: absolute;
+        right: -5rem;
+        top: 1rem;
+        color: #ffffff;
+    }
+
+    .bottomnavLinks {
+        display: none;
+    }
+
+    #check:checked~.bottomnavLinks {
+        display: flex;
+    }
+
+    #quickcheck:checked~.bgcolor {
+        display: block;
+        background-color: #ffe204;
+        /* width: 100vw; */
+        /* height: 100vh; */
+    }
+
+    .quickbtn {
+        display: flex;
+        font-size: 3rem;
+        position: absolute;
+        /* align-self: center; */
+        top: 2.8rem;
+        right: 1rem;
+    }
+
+    .quickLinksNav {
+        display: block;
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        background-color: #034D80;
+        z-index: 1;
+        width: 50%;
+    }
+
+    .quickLinksNav h2 {
+        color: var(--lightColor);
+        font-size: 2.5rem;
+        font-weight: 400;
+        padding: 2rem 1rem;
+    }
+
+    .quickLinksNav li {
+        list-style-type: none;
+        padding-left: 1rem;
+        /* margin-bottom: 1rem; */
+        line-height: 2.5;
+    }
+
+    .quickLinksNav a {
+        text-decoration: none;
+        color: var(--lightColor);
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+
+    .quickLinksNav a:hover {
+        color: #ffe204;
+        font-weight: 500
+    }
+
+    .quickLinksNav i {
+        margin-right: 1rem;
+    }
+
+    .quickLinksNav {
+        display: none;
+    }
+
+    #quickcheck:checked~.quickLinksNav {
+        display: block;
+    }
+
+    .quickCross {
+        position: absolute;
+        display: flex;
+        top: 1rem;
+        left: -4rem;
+        font-size: 3rem;
+        color: #ffffff;
+    }
+
+    .newsAndBullet {
+        padding: 1rem 5rem;
+    }
+
+    .newsColumn h2 {
+        margin-right: 0;
+    }
+
+    .bulletHeader h2 {
+        margin-bottom: 1rem;
+    }
+
+    .Cards {
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .cardImage img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+
+    .card {
+        width: 30rem;
+        min-height: 36rem;
+        margin-top: 2rem;
+    }
+
+    .cardBody {
+        text-wrap: none;
+    }
+
+    /* .cardBody p{
+
+} */
+    .cardBottom button {
+        width: 100%;
+    }
+
+    .bulletLinks {
+        width: 100%;
+    }
+
+    .bulletHeader h2 {
+        padding: 0;
+    }
+
+    .listHeader{
+        margin-bottom: 1rem;
+    }
+    .listHeading a {
+        margin: 0;
+    }
+    .listContent {
+        margin-bottom: 1.5rem;
+    }
+    .listColumn2{
+        margin-bottom: 1rem;
+    }
+    .doubtColumn {
+        width: 90%;
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .placementHeading h2 {
+        margin: 0;
+    }
+
+    .placementColumn1 {
+        padding-right: 1rem;
+    }
+
+    /* .placementBody {
+
+    } */
+
+    .rankingHeader {
+        margin-bottom: 1rem;
+    }
+
+    .rankingHeading h2 a {
+        padding: 0;
+        font-size: 4rem;
+    }
+
+    .rankingCard {
+        padding: 0;
+    }
+
+    .rankingCard h4 {
+        font-size: 2rem;
+    }
+
+    .rankingCard p {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .rankingBody {
+        padding: 0;
+        width: 100%;
+    }
+
+    .rankingColumn1Row1 {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .rankingColumn1Row2 {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .rankingNumCard h4 {
+        font-size: 1.5rem;
+    }
+
+    .rankingColumn1Row3 {
+        /* width: 100%; */
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .ranking3Image {
+        gap: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rankingColumn2 {
+        padding: 1rem;
+    }
+
+    .tropyImage img {
+        aspect-ratio: 7/9;
+    }
+
+    .internationalHeading h2 {
+        padding: 0;
+        /* margin-bottom: 0.8rem; */
+    }
+
+    .intlExpl {
+        padding: 0.6rem;
+        font-size: 1.5rem;
+        /* margin: 0.8rem; */
+    }
+
+    .internationalBody {
+        padding: 0;
+    }
+
+    .internationalFlags .flags {
+        padding: 0;
+    }
+
+    .flags img {
+        padding: 0;
+    }
+
+    .internationalFlags p {
+        padding: 1rem;
+    }
+
+    .leadersofkare .leadersHeader .leaderHeading h2 a {
+        padding: 0;
+
+    }
+
+    .leadersBody {
+        padding: 0;
+    }
+
+    .leaderImage img {
+        margin-bottom: 0.5rem;
+    }
+
+    .leaderCard {
+        padding: 1rem;
+    }
+
+    .whyKareHeader {
+        padding-bottom: 1rem;
+    }
+
+    .whyKareHeading h2 a {
+        padding: 0;
+    }
+
+    .whyKareHeading h4 {
+        padding: 0;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .whyKareBody {
+        padding: 1rem;
+    }
+
+    .infrastructure {
+        margin-bottom: 1rem;
+    }
+
+    .testimonialsHeading h2 a {
+        padding: 0;
+    }
+
+    .testimonialsHeading h2 {
+        padding-bottom: 0rem;
+        margin-bottom: 2rem;
+        }
+
+    .testimonialsBody {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .testimonialsCard{
+        margin-bottom: 2rem;
+    }
+    .industryHeader {
+        padding: 1rem;
+    }
+
+    .industryBody {
+        padding: 0;
+    }
+    .webLinksColumn1{
+        margin-bottom: 2rem;
+    }
+    .webHead h4{
+        margin-bottom: 1rem;
+    }
+    .examTop{
+        display: none;
+    }
+    .webLinksColumn2{
+        margin-bottom: 2rem;
+    }
+    .examHead h4 {
+        margin-bottom: 1.5rem;
+    }
+    .webLinksColumn3{
+        margin-bottom: 2rem;
+    }
+    .quickHead h4 {
+        margin-bottom: 1.5rem;
+    }
+    .webLinksColumn4 h4{
+        margin-bottom: 1.5rem;
+    }
+    .grievanceBottom{
+        padding: 0.5rem;
+    }
+    .collegeName p{
+        margin-bottom: 2rem;
+    }
+}
